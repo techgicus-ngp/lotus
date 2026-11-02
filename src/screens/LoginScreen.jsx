@@ -43,7 +43,7 @@ export default function LoginScreen() {
     <div className="login-page">
       <div className="login-orb o1" /><div className="login-orb o2" />
       <div className="login-orb o3" /><div className="login-orb o4" />
-
+// logo changes 
       <div className={`login-content ${shake ? 'shake' : ''}`}>
         <div className="logo-badge pop-in">
           <img src="/public/logo.jpg" alt="Lotus logo" />
@@ -51,7 +51,7 @@ export default function LoginScreen() {
 
         <div className="login-brand fade-down">
           <div className="brand-name">lotusvencon</div>
-          <div className="brand-pill">Real Estate Management</div>
+          <div className="brand-pill">Real Estate Managements</div>
         </div>
 
         <form className="login-card fade-up" onSubmit={onSubmit} noValidate>
