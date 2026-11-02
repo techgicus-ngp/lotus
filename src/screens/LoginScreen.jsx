@@ -51,7 +51,7 @@ export default function LoginScreen() {
 
         <div className="login-brand fade-down">
           <div className="brand-name">lotusvencon</div>
-          <div className="brand-pill">Real Estate Managements</div>
+          <div className="brand-pill">Real Estate Management</div>
         </div>
 
         <form className="login-card fade-up" onSubmit={onSubmit} noValidate>
