@@ -1,13 +1,18 @@
+// Map IDs come from .env (never hard-coded):
+//   VITE_ALLOWED_MAP_IDS=id1,id2,id3        → maps employees/guests may browse
+//   VITE_GARDEN_CLUBHOUSE_MAP_ID=id         → the "Garden + Clubhouse" map
+const parseIds = (v) =>
+  String(v ?? '')
+    .split(',')
+    .map((x) => x.trim())
+    .filter(Boolean);
+
 // Firestore document IDs (in the `maps` collection) that employees and
 // guests are allowed to browse/open.
-export const ALLOWED_MAP_IDS = [
-  'hat0LfWAE92X1qwvDyrS',
-  'njN2v7n7UP1maMBrhNNb',
-  'Koq1bsYIi0fc8D9LTRq2',
-];
+export const ALLOWED_MAP_IDS = parseIds(import.meta.env.VITE_ALLOWED_MAP_IDS);
 
 // The "Garden + Clubhouse" map gets special colours for amenity/garden areas.
-export const GARDEN_CLUBHOUSE_MAP_ID = 'njN2v7n7UP1maMBrhNNb';
+export const GARDEN_CLUBHOUSE_MAP_ID = (import.meta.env.VITE_GARDEN_CLUBHOUSE_MAP_ID ?? '').trim();
 
 // Plots next to a 12 m road (everything else is treated as 9 m).
 export const PLOTS_ON_12M_ROAD = new Set([

@@ -5,6 +5,10 @@ import { plotFromDoc } from '../models/plot';
 
 /** The maps employees/guests may browse (skips ones where isEnabled === false). */
 export async function loadAllowedMaps() {
+  if (!ALLOWED_MAP_IDS.length) {
+    console.warn('VITE_ALLOWED_MAP_IDS is empty — set it in .env (comma-separated map IDs).');
+    return [];
+  }
   const snap = await getDocs(
     query(collection(db, COLLECTIONS.maps), where(documentId(), 'in', ALLOWED_MAP_IDS)),
   );
