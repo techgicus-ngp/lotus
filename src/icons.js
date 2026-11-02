@@ -1,0 +1,23 @@
+// Single place for every icon used in the app (react-icons / Material Design).
+export {
+  MdLogout as IconLogout, MdSearch as IconSearch, MdClose as IconClose, MdRefresh as IconRefresh,
+  MdArrowBack as IconBack, MdVisibility as IconEye, MdVisibilityOff as IconEyeOff,
+  MdEmail as IconEmail, MdLock as IconLock, MdPerson as IconPerson, MdPersonAdd as IconPersonAdd,
+  MdPhone as IconPhone, MdInfo as IconInfo, MdLocationOn as IconLocation, MdPrint as IconPrint,
+  MdDelete as IconDelete, MdAdd as IconAdd, MdMap as IconMap, MdDescription as IconDoc,
+  MdCameraAlt as IconCamera, MdPhotoLibrary as IconGallery, MdReceiptLong as IconReceipt,
+  MdStraighten as IconRuler, MdExplore as IconCompass, MdVerified as IconVerified,
+  MdCancel as IconCancel, MdCheckCircle as IconCheck, MdBookmark as IconBookmark,
+  MdPayments as IconPayments, MdLayers as IconLayers, MdMyLocation as IconMyLocation,
+  MdFilterList as IconFilter, MdExpandMore as IconExpand, MdOpenInNew as IconOpenNew,
+  MdOpenInFull as IconOpenFull, MdCategory as IconCategory, MdLandscape as IconLandscape,
+  MdAutoAwesome as IconAuto, MdNotes as IconNotes, MdSave as IconSave,
+  MdCalendarToday as IconCalendar, MdHome as IconHome, MdWork as IconWork, MdTerrain as IconTerrain,
+  MdCake as IconCake, MdGavel as IconGavel, MdSavings as IconSavings,
+  MdAccountBalance as IconBank, MdCurrencyRupee as IconRupee, MdPercent as IconPercent,
+  MdPending as IconPending, MdRestartAlt as IconReset, MdLanguage as IconLanguage,
+  MdFitScreen as IconFit, MdBarChart as IconStats, MdSubject as IconSubject,
+  MdConfirmationNumber as IconTicket, MdDataObject as IconData, MdApartment as IconApartment,
+  MdBusiness as IconBusiness, MdGridOn as IconGrid, MdEventNote as IconEventNote,
+  MdEventRepeat as IconEventRepeat, MdLock as IconLockSmall, MdKeyboardArrowDown as IconChevronDown,
+} from 'react-icons/md';
