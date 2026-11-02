@@ -46,7 +46,7 @@ export default function LoginScreen() {
 
       <div className={`login-content ${shake ? 'shake' : ''}`}>
         <div className="logo-badge pop-in">
-          <img src="/assets/lotus_logo_gold.jpg" alt="Lotus logo" />
+          <img src="/public/logo.jpg" alt="Lotus logo" />
         </div>
 
         <div className="login-brand fade-down">
